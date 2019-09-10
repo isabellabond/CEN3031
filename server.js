@@ -51,7 +51,7 @@ fs.readFile('listings.json', 'utf8', function(err, data) {
 
   // start the server
   server.listen(port, function() {
-  	console.log('Server is listening on http://127.0.0.1:' + port);
+  	console.log('Server listening on: http://127.0.0.1:' + port);
   });
 
 });
