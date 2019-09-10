@@ -37,8 +37,7 @@ fs.readFile('listings.json', 'utf8', function(err, data) {
   // check for errors
   // use err to check
   if(err){
-    console.log('There was an error reading the listings.json file');
-    return;
+    throw err;
   }
   // save the sate in the listingData variable already defined
   // if there is no error then save the data in listingData
