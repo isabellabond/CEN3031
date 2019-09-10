@@ -22,7 +22,7 @@ var requestHandler = function(request, response) {
   }
   // send a 404 error
   else{
-    response.type('text/plain');
+    response.write('text/plain');
     response.status(404);
     response.write('Bad gateway error');
     response.end();
